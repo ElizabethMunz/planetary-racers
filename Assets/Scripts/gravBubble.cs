@@ -3,13 +3,12 @@ using System.Collections;
 
 public class gravBubble : MonoBehaviour {
 
-	public float planetForce = 120f;
+	public float planetForce;
 
 
-	void OnTriggerStay2D (Collider other) 
+	void OnTriggerStay2D (Collider2D other) 
 	{
-		if (other.attachedRigidbody) 
-			other.attachedRigidbody.AddForce (Vector2.down * planetForce, ForceMode.Acceleration);
+		other.attachedRigidbody.AddForce (planetForce * other.attachedRigidbody.velocity);
 	}
 
 }

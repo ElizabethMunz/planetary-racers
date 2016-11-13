@@ -640,6 +640,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1041250788}
   - 212: {fileID: 1041250789}
+  - 58: {fileID: 1041250791}
+  - 114: {fileID: 1041250790}
   m_Layer: 0
   m_Name: gravity-bubble1
   m_TagString: Untagged
@@ -693,6 +695,32 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1041250790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1041250787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41a914e6cc3f43dbba9727cd8b1a83d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetForce: 1
+--- !u!58 &1041250791
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1041250787}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 4.9411645
 --- !u!1 &1336199369
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +730,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1336199370}
   - 212: {fileID: 1336199371}
+  - 58: {fileID: 1336199373}
+  - 114: {fileID: 1336199372}
   m_Layer: 0
   m_Name: gravity-bubble4
   m_TagString: Untagged
@@ -755,6 +785,32 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1336199372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1336199369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41a914e6cc3f43dbba9727cd8b1a83d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetForce: 1
+--- !u!58 &1336199373
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1336199369}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 4.8832994
 --- !u!1 &1447861650
 GameObject:
   m_ObjectHideFlags: 0
