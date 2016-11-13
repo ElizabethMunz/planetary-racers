@@ -898,7 +898,7 @@ MonoBehaviour:
   jump: 0
   moveForce: 10
   maxSpeed: 5
-  jumpForce: 25
+  jumpForce: 100
 --- !u!4 &1447861654
 Transform:
   m_ObjectHideFlags: 0

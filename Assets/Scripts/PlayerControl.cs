@@ -17,12 +17,16 @@ public class PlayerControl : MonoBehaviour
 	//private bool grounded = false;			// Whether or not the player is grounded.
 	private Animator anim;
 
+    private bool inGravity;
 
 	void Awake()
 	{
 		// Setting up references.
 		//groundCheck = transform.Find("groundCheck");
 		anim = GetComponent<Animator> ();
+
+        //to start, car is in the gravitational pull of a planet
+        inGravity = true;
 	}
 
 
@@ -39,49 +43,61 @@ public class PlayerControl : MonoBehaviour
 
 	void FixedUpdate ()
 	{
-        // create unit vector in direction car is facing
-        Vector2 carDir = GetComponent<Rigidbody2D>().transform.right;
-        carDir = carDir.normalized;
+
+        //check if car is within gravitational pull of a planet
 
 
 
-        // Cache the horizontal input.
-        float h = Input.GetAxis("Horizontal");
 
-		// The Speed animator parameter is set to the absolute value of the horizontal input.
-		anim.SetFloat("Speed", Mathf.Abs(h));
+        //car will only move or change direction if it is within a planet's gravitational pull
+        if(inGravity)
+        {
+            // create unit vector in direction car is facing
+            Vector2 carDir = GetComponent<Rigidbody2D>().transform.right;
+            carDir = carDir.normalized;
 
-		// If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
-		if(h * GetComponent<Rigidbody2D>().velocity.x < maxSpeed)
-			// ... add a force to the player.
-			GetComponent<Rigidbody2D>().AddForce(carDir * h * moveForce);
 
-		// If the player's horizontal velocity is greater than the maxSpeed...
-		if(Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x) > maxSpeed)
-			// ... set the player's velocity to the maxSpeed in the x axis.
-			GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Sign(GetComponent<Rigidbody2D>().velocity.x) * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
 
-		// If the input is moving the player right and the player is facing left...
-		if(h > 0 && !facingRight)
-			// ... flip the player.
-			Flip();
-		// Otherwise if the input is moving the player left and the player is facing right...
-		else if(h < 0 && facingRight)
-			// ... flip the player.
-			Flip();
+            // Cache the horizontal input.
+            float h = Input.GetAxis("Horizontal");
 
-		// If the player should jump...
-		if(jump)
-		{
-			// Set the Jump animator trigger parameter.
-			//anim.SetTrigger("Jump");
+            // The Speed animator parameter is set to the absolute value of the horizontal input.
+            anim.SetFloat("Speed", Mathf.Abs(h));
 
-			// Add a vertical force to the player.
-			GetComponent<Rigidbody2D>().AddForce(transform.up * jumpForce);
+            // If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
+            if (h * GetComponent<Rigidbody2D>().velocity.x < maxSpeed)
+                // ... add a force to the player.
+                GetComponent<Rigidbody2D>().AddForce(carDir * h * moveForce);
 
-			// Make sure the player can't jump again until the jump conditions from Update are satisfied.
-			jump = false;
-		}
+            // If the player's horizontal velocity is greater than the maxSpeed...
+            if (Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x) > maxSpeed)
+                // ... set the player's velocity to the maxSpeed in the x axis.
+                GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Sign(GetComponent<Rigidbody2D>().velocity.x) * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
+
+            // If the input is moving the player right and the player is facing left...
+            if (h > 0 && !facingRight)
+                // ... flip the player.
+                Flip();
+            // Otherwise if the input is moving the player left and the player is facing right...
+            else if (h < 0 && facingRight)
+                // ... flip the player.
+                Flip();
+
+            // If the player should jump...
+            if (jump)
+            {
+                // Set the Jump animator trigger parameter.
+                //anim.SetTrigger("Jump");
+
+                // Add a vertical force to the player.
+                GetComponent<Rigidbody2D>().AddForce(transform.up * jumpForce);
+
+                // Make sure the player can't jump again until the jump conditions from Update are satisfied.
+                jump = false;
+            }
+        }
+
+
 	}
 	
 	

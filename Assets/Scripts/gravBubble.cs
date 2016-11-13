@@ -12,7 +12,6 @@ public class gravBubble : MonoBehaviour {
         dir = transform.position - other.transform.position;
         dir = dir.normalized;
 
-
         other.attachedRigidbody.AddForce (planetForce * dir);
 	}
 
