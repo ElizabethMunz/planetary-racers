@@ -706,7 +706,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f41a914e6cc3f43dbba9727cd8b1a83d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetForce: 1
+  planetForce: 5
+  dir: {x: 0, y: 0}
 --- !u!58 &1041250791
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -796,7 +797,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f41a914e6cc3f43dbba9727cd8b1a83d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetForce: 1
+  planetForce: 2
+  dir: {x: 0, y: 0}
 --- !u!58 &1336199373
 CircleCollider2D:
   m_ObjectHideFlags: 0
