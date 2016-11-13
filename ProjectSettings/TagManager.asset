@@ -44,10 +44,10 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 1272098581
-    locked: 0
+    locked: 1
   - name: Foreground
     uniqueID: 2534124197
-    locked: 0
+    locked: 1
   - name: Player
     uniqueID: 476839829
     locked: 0
