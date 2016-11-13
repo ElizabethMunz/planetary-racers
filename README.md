@@ -8,7 +8,7 @@ Eventually, there will be sliders to adjust various aspects of the physics, like
 
 
 
-![screenshot](screenshot1.png)
+![screenshot](screenshot1.PNG)
 
 
 
