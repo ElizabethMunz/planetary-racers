@@ -896,7 +896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facingRight: 1
   jump: 0
-  moveForce: 100
+  moveForce: 10
   maxSpeed: 5
   jumpForce: 25
 --- !u!4 &1447861654
