@@ -18,40 +18,6 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: {x: 0, y: 0, z: 0}
-        inSlope: {x: 0, y: 0, z: -360}
-        outSlope: {x: 0, y: 0, z: -360}
-        tangentMode: 0
-      - time: 1
-        value: {x: 0, y: 0, z: -360}
-        inSlope: {x: 0, y: 0, z: -360}
-        outSlope: {x: 0, y: 0, z: -360}
-        tangentMode: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    path: frontTire
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: {x: 0, y: 0, z: 0}
-        inSlope: {x: 0, y: 0, z: -360}
-        outSlope: {x: 0, y: 0, z: -360}
-        tangentMode: 0
-      - time: 1
-        value: {x: 0, y: 0, z: -360}
-        inSlope: {x: 0, y: 0, z: -360}
-        outSlope: {x: 0, y: 0, z: -360}
-        tangentMode: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    path: backTire
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: {x: 0, y: 0, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -64,6 +30,40 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     path: 
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: -360}
+        outSlope: {x: 0, y: 0, z: -360}
+        tangentMode: 0
+      - time: 1
+        value: {x: 0, y: 0, z: -360}
+        inSlope: {x: 0, y: 0, z: -360}
+        outSlope: {x: 0, y: 0, z: -360}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: bluecar/frontTire
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: -360}
+        outSlope: {x: 0, y: 0, z: -360}
+        tangentMode: 0
+      - time: 1
+        value: {x: 0, y: 0, z: -360}
+        inSlope: {x: 0, y: 0, z: -360}
+        outSlope: {x: 0, y: 0, z: -360}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: bluecar/backTire
   m_PositionCurves: []
   m_ScaleCurves: []
   m_FloatCurves: []
@@ -75,13 +75,13 @@ AnimationClip:
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
     genericBindings:
-    - path: 1206880445
+    - path: 1958761683
       attribute: 4
       script: {fileID: 0}
       classID: 4
       customType: 14
       isPPtrCurve: 0
-    - path: 2568479407
+    - path: 3050727874
       attribute: 4
       script: {fileID: 0}
       classID: 4
@@ -132,7 +132,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: frontTire
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -152,7 +152,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: frontTire
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -160,19 +160,19 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 0
-        inSlope: -360
-        outSlope: -360
+        inSlope: 0
+        outSlope: 0
         tangentMode: 10
       - time: 1
-        value: -360
-        inSlope: -360
-        outSlope: -360
+        value: 0
+        inSlope: 0
+        outSlope: 0
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: frontTire
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -192,7 +192,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: backTire
+    path: bluecar/frontTire
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -212,7 +212,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: backTire
+    path: bluecar/frontTire
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -232,7 +232,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: backTire
+    path: bluecar/frontTire
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -252,7 +252,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: 
+    path: bluecar/backTire
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -272,7 +272,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: 
+    path: bluecar/backTire
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -280,19 +280,19 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 0
-        inSlope: 0
-        outSlope: 0
+        inSlope: -360
+        outSlope: -360
         tangentMode: 10
       - time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
+        value: -360
+        inSlope: -360
+        outSlope: -360
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: 
+    path: bluecar/backTire
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves:
@@ -303,7 +303,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: backTire
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -313,7 +313,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: backTire
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -323,7 +323,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: backTire
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -333,7 +333,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: 
+    path: bluecar/frontTire
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -343,7 +343,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: 
+    path: bluecar/frontTire
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -353,7 +353,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: 
+    path: bluecar/frontTire
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -363,7 +363,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: frontTire
+    path: bluecar/backTire
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -373,7 +373,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: frontTire
+    path: bluecar/backTire
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -383,7 +383,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: frontTire
+    path: bluecar/backTire
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 1
